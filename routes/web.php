@@ -46,3 +46,10 @@ Route::get('send-mail', function () {
    
     dd("Email is Sent.");
 });
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
